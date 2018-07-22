@@ -10,6 +10,10 @@
   </head>
 
   <body>
+    <% flash.each do |key,value| %>
+    <h5 style="color : green"><%= value %> </h5>
+    <% end %>
+
     <%= yield %>
   </body>
 </html>
